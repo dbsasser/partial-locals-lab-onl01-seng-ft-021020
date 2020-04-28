@@ -5,5 +5,5 @@ Classroom Info
 </p>
 
 <% @classroom.students.all.each do |student| %>
-  <%= render 'students/student', locals: {class_student: student} %>
+  <%= render partial: 'students/student', locals: {class_student: student} %>
 <% end %>
